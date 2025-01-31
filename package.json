@@ -1,5 +1,6 @@
 {
-  "name": "https://kamalk151.github.io/demo",
+  "homepage": "https://kamalk151.github.io/demo.github.io",
+  "name": "mobile",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
