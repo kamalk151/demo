@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import useUsers from './helper';
+import { useToGetUsers, useToSendLead } from './helper';
 
 const Header = () => {
 const [inputObj, setInputObj] = useState({
@@ -10,8 +10,9 @@ const [inputObj, setInputObj] = useState({
   address: ''
 });
 
-const { data, isPending, isError } = useUsers(inputObj);
-console.log(data, isPending, isError, '====');
+const { data, isPending, isError } = useToGetUsers(inputObj);
+const mutation = useToSendLead();
+console.log(data, isPending, isError, '====', mutation);
 
 const handleChange = (e) => {
   const { name, value } = e.target;
@@ -21,8 +22,8 @@ const handleChange = (e) => {
   }));
 };
 
-const handleClick = () => {
-  console.log(inputObj);
+const handleSubmit = () => {  
+  console.log(inputObj, mutation.mutate(inputObj));
 };
 
   return (
@@ -37,7 +38,7 @@ const handleClick = () => {
         <br />
         <input type='text' name='address' placeholder='Enter address' data-testid='address' value={inputObj.address} onChange={handleChange} />
         <br />
-        <button onClick={handleClick}>Send</button>
+        <button onClick={handleSubmit}>Send</button>
       </header>
 
       <div className='users' style={{ minWidth: '40%' }}> 
