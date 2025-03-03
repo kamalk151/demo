@@ -7,7 +7,7 @@ const fetchUsers = async (id) => {
 
 const createLead = async (inputObj) => {
 
-  const res = await fetch('https://dummyjson.com/posts', {
+  const res = await fetch('http://localhost:8080/createLead', {
     method: 'POST',
     body: JSON.stringify(inputObj),
     headers: {

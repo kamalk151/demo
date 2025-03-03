@@ -7,7 +7,8 @@ const [inputObj, setInputObj] = useState({
   name: '',
   email: '',
   phone: '',
-  address: ''
+  address: '',
+  emailTo: ''
 });
 
 const { data, isPending, isError } = useToGetUsers(inputObj);
@@ -29,7 +30,10 @@ const handleSubmit = () => {
   return (
     <div className="App" style={{ display: 'flex', justifyContent: 'space-around'}}>
       <header className="App-header" style={{ minWidth: '40%' }}>
-        <h1> Welcome to test whatsApp Api </h1>
+        <h1> Welcome to test whatsApp Api</h1><br/>
+        <h3>Email will send from ( test@gmail.com ) </h3>
+        <input type='text' name='emailTo' placeholder='Enter Reciever Email-Id *' data-testid='emailTo' value={inputObj.emailTO} onChange={handleChange}/>
+        <br />
         <input type='text' name='name' placeholder='Enter Name' data-testid='name' value={inputObj.name} onChange={handleChange}/>
         <br />
         <input type='text' name='email' placeholder='Enter email' data-testid='email' value={inputObj.email} onChange={handleChange}/>
