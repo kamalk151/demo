@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kamalk151.github.io/demo",
+  "homepage": "https://kamalk151.github.io/mfe",
   "name": "whatsapp-demo",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
@@ -10,7 +10,7 @@
     "dev:mfe": "cd mfe && npm run start",
     "dev:bff": "cd bff && npm run server",
     "predeploy": "cd mfe && npm run build",
-    "deploy": "cd mfe && gh-pages -d build"
+    "deploy": "cd mfe && npm run deploy"
   },
   "author": "",
   "license": "ISC",
