@@ -22,8 +22,7 @@ const transporter = nodemailer.createTransport({
   ...configOptions
 });
 
-const sendMail = (req, res) => {
-  console.log(configOptions, 'Request Body:', req.body)
+const sendMail = async (req) => {
   const d = new Date();
   const date = `${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`;
   
@@ -32,16 +31,12 @@ const sendMail = (req, res) => {
       from: process.env.EMAIL_FROM,
       to: req.body.emailTo,
       subject: `Open Lead - ${date}`,
-      text: `Hello Dear,\nPlease find the below customer details\n***********************************\nName: ${req.body.name} \nEmail: ${req.body.email} \nPhone: ${req.body.phone} \nAddress: ${req.body.address}`
+      text: `Hello Dear,\nPlease find the below customer details\n***********************************\nName: ${req.body.name} \nPhone: ${req.body.phone} \nAddress: ${req.body.address}`
     }
-
-    transporter.sendMail(mailOptions, function(error, info) {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-    });
+    
+    const mailRes = await transporter.sendMail(mailOptions)
+    console.log(mailRes, 'mailRes')
+    return mailRes
   }
 }
 module.exports = sendMail

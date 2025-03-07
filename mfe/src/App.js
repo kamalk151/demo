@@ -1,12 +1,14 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import './App.css';
-import Header from './Header';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import TestLeadForm from './Components/TestLeadForm'
+import { GlobalStyle } from './Components/styledComponents'
+
 function App() {
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient()
   return (
     <QueryClientProvider client={queryClient}>
+      <GlobalStyle />
       <div className="App">
-        <Header />
+        <TestLeadForm />
       </div>
     </QueryClientProvider>
   );

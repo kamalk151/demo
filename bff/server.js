@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sendMail = require('./mailer');
+const whatsApp = require('./controller/whatsApp');
 require('dotenv').config();
 const app = express();
 
@@ -19,8 +20,21 @@ app.post('/createLead',  async (req, res) => {
     return res.status(400).json({ status: `Error`, message: `Invalid request` })
   }
   await sendMail(req, res);
+  await whatsApp(req, res);
   return res.status(200).json({
     message: 'Lead created successfully',
+    status: "success",
+    data: req.body
+  })
+})
+
+app.post('/sendMail',  async (req, res) => {
+  if (!req.body.emailTo) {
+    return res.status(400).json({ status: `Error`, message: `Invalid request` })
+  }
+  await sendMail(req)
+  return res.status(200).json({
+    message: 'Mail sent successfully',
     status: "success",
     data: req.body
   })
