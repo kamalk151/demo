@@ -3,14 +3,14 @@
   "name": "whatsapp-demo",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "/mfe",
   "scripts": {
     "start": "npm run dev",
     "dev": "concurrently -c \"green,blue\" \"npm run dev:mfe\" \"npm run dev:bff\"",
     "dev:mfe": "cd mfe && npm run start",
     "dev:bff": "cd bff && npm run server",
     "predeploy": "cd mfe && npm run build",
-    "deploy": "cd mfe && npm run deploy"
+    "deploy": "cd mfe && gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
