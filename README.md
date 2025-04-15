@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Hoverfly
+To start Hoverfly in webserver mode with CORS enabled.
+--webserver: Starts Hoverfly in webserver mode.
+--cors: Enables CORS headers for cross-origin requests.
+npm run hoverfly ("hoverctl start webserver --cors"),
+After starting Hoverfly, import the simulation file (simulation.json) using:
+-- Go to Mfe/Hoverfly
+-- and run import simulation file cmd
+npm run hoverfly:import (hoverctl import mfe/hoverfly/simulation.json)
+
+to Stop hoverfly server
+-- hoverctl stop
+
+NOte: Re-import simulation file on every changes in simulation file
+
+### Run MFE on localy
+to run MFE only run below command
+npm run dev 
+

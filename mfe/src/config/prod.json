@@ -1,0 +1,19 @@
+{
+  "getLocationsEndPoint": "getLocations",
+  "getPropertyListEndPoint": "getPropertyList",
+  "getSpecialOfferPropertyListEndPoint": "getSpecialOfferPropertyList",
+  "api": {
+    "getLocations": {
+      "url": "/locationsList",
+      "method": "GET"
+    },
+    "getPropertyList": {
+      "url": "/propertyList",
+      "method": "GET"
+    },
+    "getSpecialOfferPropertyList": {
+      "url": "/specialOfferPropertyList",
+      "method": "GET"
+    }
+  }
+}

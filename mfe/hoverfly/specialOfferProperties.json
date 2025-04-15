@@ -1,0 +1,146 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "itemImg1",
+      "label": "For Sale",
+      "labelClass": "danger",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "price": "1.2",
+      "priceType": "Cr",
+      "priceDetails": "Leasehold",
+      "title": "3 Bedroom Villa",
+      "locationId": 1,
+      "features": {
+        "furnishing": "Unfurnished",
+        "baths": 3,
+        "propertyType": "Apartment",
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "internet": true,
+        "cleaning": false,
+        "configurations": "3 bhk"
+      }
+    },
+    {
+      "id": 2,
+      "image": "itemImg2",
+      "label": "Hot Deal",
+      "labelClass": "success",
+      "price": "200,000",
+      "priceType": "Lacs",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "priceDetails": "Bi-annually",
+      "title": "3 Bedroom Villa",
+      "locationId": 2,
+      "features": {
+        "furnishing": "Unfurnished",
+        "configurations": "3 bhk",
+        "baths": 3,
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "propertyType": "Apartment",
+        "internet": true,
+        "cleaning": true,
+        "beds": 3,
+        "area": "150 sqm"
+      }
+    },
+    {
+      "id": 3,
+      "image": "itemImg3",
+      "label": "Sale",
+      "labelClass": "danger",
+      "price": "1600",
+      "priceType": "Cr",
+      "priceDetails": "Per Sale",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "title": "3 Bedroom Villa",
+      "locationId": 3,
+      "features": {
+        "furnishing": "Furnished",
+        "propertyType": "Apartment",
+        "configurations": "3 bhk",
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "internet": true,
+        "cleaning": true,
+        "beds": 3,
+        "baths": 3,
+        "area": "150 sqm"
+      }
+    },
+    {
+      "id": 4,
+      "image": "itemImg3",
+      "label": "Sale",
+      "labelClass": "danger",
+      "price": "1600",
+      "priceType": "Cr",
+      "priceDetails": "Per Sale",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "title": "3 Bedroom Villa",
+      "locationId": 3,
+      "features": {
+        "furnishing": "Furnished",
+        "propertyType": "Apartment",
+        "configurations": "3 bhk",
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "internet": true,
+        "cleaning": true
+      }
+    },
+    {
+      "id": 5,
+      "image": "itemImg3",
+      "label": "Sale",
+      "labelClass": "danger",
+      "price": "1600",
+      "priceType": "Cr",
+      "priceDetails": "Per Sale",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "title": "3 Bedroom Villa",
+      "locationId": 3,
+      "features": {
+        "furnishing": "Unfurnished",
+        "propertyType": "Apartment",
+        "configurations": "3 bhk",
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "internet": true,
+        "cleaning": true
+      }
+    },
+    {
+      "id": 5,
+      "image": "itemImg3",
+      "label": "Sale",
+      "labelClass": "danger",
+      "price": "1600",
+      "priceType": "Cr",
+      "priceDetails": "Per Sale",
+      "typeOfProperty": ["prime", "luxury", "premium", "specialOffer", "rendal", "hotDeal", "forSale", "featured"],
+      "title": "3 Bedroom Villa",
+      "locationId": 4,
+      "features": {
+        "furnishing": "furnished",
+        "propertyType": "Apartment",
+        "configurations": "3 bhk",
+        "builtInArea": "1150 sq.ft.",
+        "carpetArea": "1050 sq.ft.",
+        "pool": true,
+        "internet": true,
+        "cleaning": true,
+        "beds": 3,
+        "baths": 3,
+        "area": "150 sqm"
+      }
+    }
+  ]
+}

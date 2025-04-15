@@ -1,0 +1,15 @@
+{
+  "data": [
+    { "id": 1, "name": "Noida", "state": "Uttar Pradesh"},
+    { "id": 2, "name": "Delhi", "state": "Delhi"},
+    { "id": 3, "name": "Gurgaon", "state": "Haryana"},
+    { "id": 4, "name": "Mumbai", "state": "Maharashtra"},
+    { "id": 5, "name": "Bangalore", "state": "Karnataka"},
+    { "id": 6, "name": "Ghaziabad", "state": "Uttar Pradesh"},
+    { "id": 7, "name": "Lucknow", "state": "Uttar Pradesh"},
+    { "id": 8, "name": "Faridabad", "state": "Haryana"},
+    { "id": 9, "name": "Panipat", "state": "Haryana"},
+    { "id": 10, "name": "New Delhi", "state": "Delhi"},
+    { "id": 11, "name": "Dwarka", "state": "Delhi"}
+  ]
+}
