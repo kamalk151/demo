@@ -1,16 +1,13 @@
 {
-  "homepage": "https://kamalk151.github.io/real",
-  "name": "realestate",
+  "homepage": "https://kamalk151.github.io/demo",
+  "name": "whatsapp-demo",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "/mfe",
   "scripts": {
     "start": "npm run dev",
-    "dev": "concurrently -c \"green,blue\" \"npm run dev:mfe\"",
-    "dev:mfe": "cd mfe && npm run dev",
-    "hoverfly": " hoverctl start webserver --cors",
-    "hoverfly:import": "hoverctl import mfe/hoverfly/simulation.json",
-    "hoverfly:stop": "hoverctl stop",
+    "dev": "concurrently -c \"green,blue\" \"npm run dev:mfe\" \"npm run dev:bff\"",
+    "dev:mfe": "cd mfe && npm run start",
     "dev:bff": "cd bff && npm run server",
     "predeploy": "cd mfe && npm run build",
     "deploy": "cd mfe && gh-pages -d build"
@@ -20,9 +17,5 @@
   "devDependencies": {
     "concurrently": "^9.1.2",
     "gh-pages": "^6.3.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react-bootstrap": "^2.10.9"
   }
 }

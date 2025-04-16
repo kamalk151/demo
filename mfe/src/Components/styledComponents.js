@@ -36,6 +36,9 @@ export const CustomTextArea = styled.textarea`
 export const GlobalStyle = createGlobalStyle`
     body{
       margin:0;
+      color:#000;
+      font-family: Arial sans-serif;
+      margin:20px;
     }
     
     .textArea{

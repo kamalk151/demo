@@ -1,22 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './global.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import './Assets/css/real-estate.css'
-import './Assets/css/style.css'
-import './Assets/css/custom.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <div className="wrapper"
-      // style={{ background: '#ffc1073d'}}
-    >
-      <App />
-    </div>
+    <App />
   </React.StrictMode>
 );
 
